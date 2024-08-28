@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Roll</title>
+</head>
+<body>
+    <!-- On ajoute un bouton à notre design afin de lancer une partie automatiquement --> 
+    <div id="ui"> 
+        <!-- On utilise un nouveau type de champ : range --> 
+        <!-- On va lui associer un champ output qui servira à récupérer la valeur du champ input --> 
+        <!-- On garde aussi un bouton afin de lancer la partie --> 
+         Nombre de dés : <output id="nb-dice-display">3</output> 
+        <input id="nb-dice" type="range" min="1" max="10" step="1" value="3"> 
+        <button type="button" id="play-button">Jouer</button> 
+    </div>
+
+
+
+
+
+
+    <!-- Eh toi là, inutile de modifier le HTML : l'objectif est d'insérer des élements via JS ! Bonne chance ! -->
+    <div id="app">
+        <div class="board" id="player"></div>
+    </div>
+    <script src="../js/correction.js"></script>
+    <!--<script src="../js/app.js"></script> -->
+</body>
+</html>
